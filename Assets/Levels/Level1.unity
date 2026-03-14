@@ -13950,20 +13950,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
-      propertyPath: answers
-      value: '1
-
-        2
-
-        3
-
-        4'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
-      propertyPath: question
-      value: "What is 1 + 1\t"
-      objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
       value: QuizPage
