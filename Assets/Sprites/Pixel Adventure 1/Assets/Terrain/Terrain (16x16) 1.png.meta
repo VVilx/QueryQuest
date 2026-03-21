@@ -108,9 +108,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 80
-        height: 48
+        y: 129
+        width: 9
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,9 +261,9 @@ TextureImporter:
       name: Terrain (16x16) 1_7
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 64
-        width: 80
+        width: 44
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -284,9 +284,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 64
-        width: 64
-        height: 48
+        y: 80
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,9 +305,9 @@ TextureImporter:
       name: Terrain (16x16) 1_9
       rect:
         serializedVersion: 2
-        x: 272
+        x: 274
         y: 64
-        width: 80
+        width: 44
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -349,9 +349,9 @@ TextureImporter:
       name: Terrain (16x16) 1_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 98
         y: 0
-        width: 80
+        width: 44
         height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -372,9 +372,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 0
-        width: 64
-        height: 48
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,7 +420,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
