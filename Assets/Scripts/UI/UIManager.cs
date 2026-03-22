@@ -27,6 +27,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject notePanel;
     [SerializeField] private TextMeshProUGUI noteText;
 
+    [Header("Level Complete")]
+    [SerializeField] private GameObject levelCompletePanel;
+
     private QuizTrigger currentTrigger;
     private char correctLetter;
   
@@ -146,6 +149,8 @@ public class UIManager : MonoBehaviour
         if(playerMovement != null) playerMovement.enabled = false;
         if(playerAttack != null) playerAttack.enabled = false;
 
+        Time.timeScale = 0f;
+
         // Start selection at first button
         selectedIndex = 0;
         UpdateButtonHighlight();
@@ -212,7 +217,8 @@ public class UIManager : MonoBehaviour
         {
             feedbackText.text = "Correct!";
             if(currentTrigger != null) currentTrigger.MarkComplete();
-            StartCoroutine(CloseQuiz());
+
+            CloseQuiz();
         }
         else
         {
@@ -220,15 +226,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    private IEnumerator CloseQuiz()
+    private void CloseQuiz()
     {
-        yield return new WaitForSeconds(1f);
 
         quizPanel.SetActive(false);
         quizOpen = false;
 
         if(playerMovement != null) playerMovement.enabled = true;
         if(playerAttack != null) playerAttack.enabled = true;
+
+        Time.timeScale = 1f;
 
         currentTrigger = null;
     }
@@ -248,12 +255,54 @@ public class UIManager : MonoBehaviour
         playerAttack = FindObjectOfType<PlayerAttack>();
         if(playerMovement != null) playerMovement.enabled = false;
         if(playerAttack != null) playerAttack.enabled = false;
+
+        Time.timeScale = 0f;
     }
 
      public void CloseNote()
     {
         notePanel.SetActive(false);
         noteOpen = false;
+
+        if(playerMovement != null) playerMovement.enabled = true;
+        if(playerAttack != null) playerAttack.enabled = true;
+
+        Time.timeScale = 1f;
+    }
+
+    #endregion
+
+    #region Level Complete UI
+
+    public void OpenLevelComplete()
+    {
+        levelCompletePanel.SetActive(true);
+
+        if(playerMovement != null) playerMovement.enabled = false;
+        if(playerAttack != null) playerAttack.enabled = false;
+
+        Time.timeScale = 0f;
+    }
+
+    // Save game option
+    public void SaveProgress()
+    {
+        int currentLevel = SceneManager.GetActiveScene().buildIndex;
+
+        if(PlayerPrefs.GetInt("UnlockedLevel", 0) < currentLevel)
+            PlayerPrefs.SetInt("UnlockedLevel", currentLevel);
+
+        PlayerPrefs.Save();
+    }
+
+    // Go to the next level
+    public void NextLevel()
+    {
+        Time.timeScale = 1f;
+
+
+        int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+        SceneManager.LoadScene(nextScene);
 
         if(playerMovement != null) playerMovement.enabled = true;
         if(playerAttack != null) playerAttack.enabled = true;
