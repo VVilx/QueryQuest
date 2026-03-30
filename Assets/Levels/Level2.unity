@@ -1464,7 +1464,6 @@ Transform:
   - {fileID: 1159085719}
   - {fileID: 519570946}
   - {fileID: 1304860216}
-  - {fileID: 494805190}
   m_Father: {fileID: 2015711232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &101841325
@@ -7366,22 +7365,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A) Link table
 
-        B) USE library:
+        B) Join table
 
-        C) APPLY library;
+        C) Link key
 
         D)
-        UTILIZE library;'
+        Foreign key '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: Which is a constraint used to link two tables together?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -7832,11 +7831,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!4 &494805190 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-  m_PrefabInstance: {fileID: 1996007298}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &498035324
 GameObject:
   m_ObjectHideFlags: 0
@@ -7974,7 +7968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3585015031360626276, guid: 9d74968ce75a38a4b93bf0081d64de51, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.51
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 3585015031360626276, guid: 9d74968ce75a38a4b93bf0081d64de51, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10305,24 +10299,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) SELECT * FROM library;
 
-        B) CUT DATABASE library;
+        B) SELECT ALL library;
 
         C)
-        DROP DATABASE library;
+        RETRIEVE DATA library;
 
-        D) REMOVE DATABASE library;
+        D) GET DATA library;
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: How would you retrieve all data from a table called library?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: completed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -13334,8 +13332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To delete a database you must use the must type on the SQL server  DROP
-        DATABASE database_name;
+      value: To retrieve all data from a table, use SELECT * FROM table;
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15185,6 +15182,25 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) ADD DATA table();
+
+        B) NEW DATA table();
+
+        C) INSERT
+        INTO table();
+
+        D) PUT INTO table(); '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: 'How do you insert data into a table? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -24508,6 +24524,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizNote
       objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'To insert data into tables, you would use INSERT INTO table(); '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28845,7 +28865,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To select the database that you created you must type in USE database_name;
+      value: The constraint is a key used to link two tables together is a foreign
+        key.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29630,63 +29651,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1001 &1996007298
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 90775876}
-    m_Modifications:
-    - target: {fileID: 5232661587448215738, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_Name
-      value: Saw
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6399994
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.6500001
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.014009595
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8540708609565991735, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5f64f3c9a54af1c41ba10d9e2db396eb, type: 3}
 --- !u!1001 &2000148351
 PrefabInstance:
   m_ObjectHideFlags: 0
