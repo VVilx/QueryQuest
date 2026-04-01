@@ -9,11 +9,14 @@ EditorBuildSettings:
     path: Assets/Levels/_MainMenu.unity
     guid: f0fbf489ea08e534e96fbcdcc124c997
   - enabled: 1
+    path: Assets/Levels/Tutorial.unity
+    guid: bb780ab3ec7ae4844a97e055f523a086
+  - enabled: 1
     path: Assets/Levels/Level1.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Levels/Level2.unity
-    guid: 831e929cd454ba744b399806c9f07f57
+    guid: 872ad51be22150841b1407a8d6ff33cb
   - enabled: 1
     path: Assets/Levels/Level3.unity
     guid: 79ddd711624aa1d4ca4b461d245d1ceb
@@ -25,7 +28,7 @@ EditorBuildSettings:
     guid: c37035b63cca2304da9f3c44f98c49c5
   - enabled: 1
     path: Assets/Levels/Level6.unity
-    guid: 91e2ec529f6ddab43a857afa1d21845c
+    guid: 5d45249a4e5f29e45ba82ad136e53de6
   - enabled: 1
     path: Assets/Levels/Level7.unity
     guid: 86646c5d9699c834b8cc031aff470953

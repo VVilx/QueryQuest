@@ -289,10 +289,12 @@ public class UIManager : MonoBehaviour
     {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;
 
-        if(PlayerPrefs.GetInt("UnlockedLevel", 0) < currentLevel)
-            PlayerPrefs.SetInt("UnlockedLevel", currentLevel);
+        int unlocked = PlayerPrefs.GetInt("UnlockedLevel", 2);
 
-        PlayerPrefs.Save();
+        if(currentLevel + 1 > unlocked)
+            PlayerPrefs.SetInt("UnlockedLevel", currentLevel + 1);
+            PlayerPrefs.Save();
+            
     }
 
     // Go to the next level
@@ -300,12 +302,12 @@ public class UIManager : MonoBehaviour
     {
         Time.timeScale = 1f;
 
+        if(playerMovement != null) playerMovement.enabled = true;
+        if(playerAttack != null) playerAttack.enabled = true;
 
         int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(nextScene);
 
-        if(playerMovement != null) playerMovement.enabled = true;
-        if(playerAttack != null) playerAttack.enabled = true;
     }
 
     #endregion
