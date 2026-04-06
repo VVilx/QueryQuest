@@ -722,7 +722,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: In a database, DELETE removes specific rows. DROP removes the entire
+        table and its structure from the database.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6796,11 +6797,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) DROP removes specific rows. DELETE removes the entire table.
+
+        B)
+        DELETE removes specific rows. DROP removes the entire table.
+
+        C)
+        DELETE removes specific columns. DROP removes the entire table.
+
+        D)
+        DELETE removes specific rows. DROP removes specific columns. '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: What's the difference between DELETE and DROP?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -7625,22 +7635,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: ' A) A view presents data from one or more tables in a unstructured
+        way
 
-        B) USE library:
+        B) A view is a virtual table created by a SELECT query and enables
+        access
 
-        C) APPLY library;
+        C) A view is a virtual table created by a SELECT query and
+        restricts access
 
-        D)
-        UTILIZE library;'
+        D) None of the above'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: What is a view?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -10434,11 +10446,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.880554
+      value: 4.88
       objectReference: {fileID: 0}
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.83286685
+      value: -0.73
       objectReference: {fileID: 0}
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10474,20 +10486,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
-
-        B) CUT DATABASE library;
-
-        C)
-        DROP DATABASE library;
-
-        D) REMOVE DATABASE library;
-
-'
+      value: "A) EXCEPT returns the distinct union of both result sets to remove
+        duplicates.\nB) EXCEPT returns only rows common to both queries.\nC) EXCEPT
+        returns rows in the first query that aren\u2019t in the second. \nD) None
+        of the above"
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: When trying to find data that exists in BOTH tables, what join would
+        you use?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -13244,8 +13251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To delete a database you must use the must type on the SQL server  DROP
-        DATABASE database_name;
+      value: "EXCEPT returns rows in the first query that aren\u2019t in the second."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15135,6 +15141,27 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) CHAR stores fixed-length data and pads extra spaces.
+
+        B)
+        CHAR  stores variable-length data, saving storage space.
+
+        C) CHAR
+        stores singular characters that are used to make a STRING.
+
+        D) All
+        of the above'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: What does CHAR do?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -24612,6 +24639,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizNote
       objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: CHAR stores fixed-length data and pads extra spaces.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28868,7 +28899,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To select the database that you created you must type in USE database_name;
+      value: A view is a virtual table created by a SELECT query. Views simplify
+        complex queries, improve readability, and enhance security by restricting
+        access to specific rows or columns.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

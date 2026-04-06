@@ -10366,20 +10366,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) SELECT employee, salary FROM table ORDER BY salary MAX 5;
 
-        B) CUT DATABASE library;
+        B)
+        SELECT employee, salary FROM table SORT BY salary DESC LIMIT 5;
 
         C)
-        DROP DATABASE library;
+        SELECT employee, salary FROM table ORDER BY salary DESC LIMIT 5;
 
-        D) REMOVE DATABASE library;
+        D)
+        SELECT salary FROM table ORDER BY salary DESC LIMIT 5;
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: To get the highest five salary employees on a table
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -13220,8 +13222,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To delete a database you must use the must type on the SQL server  DROP
-        DATABASE database_name;
+      value: To get the highest five values on a table, use SELECT var, value FROM
+        table ORDER BY value DESC LIMIT 5;
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

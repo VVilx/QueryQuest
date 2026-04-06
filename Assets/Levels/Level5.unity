@@ -769,7 +769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: "A PRIMARY KEY uniquely identifies each row in a table: it combines
+        UNIQUE + NOT NULL, there can be only one per table, and it\u2019s the default
+        target for foreign keys.\r\n\r\nA UNIQUE key also enforces uniqueness, but
+        doesn\u2019t require NOT NULL and you can have many UNIQUE constraints per
+        table."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6694,11 +6698,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) PRIMARY KEY does not consist of UNIQUE
+
+        B) PRIMARY KEY combines
+        UNIQUE + NULL, there can only be one per table
+
+        C) PRIMARY KEY you
+        can have many PRIMARY KEY constraints per table.
+
+        D) PRIMARY KEY
+        combines UNIQUE + NOT NULL, there can be only one per table'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: Difference between PRIMARY KEY and UNIQUE
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -7523,22 +7536,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A)  EXISTS checks whether a correlated subquery returns at least one
+        row
 
-        B) USE library:
+        B) EXISTS checks  a correlated subquery returns none
 
-        C) APPLY library;
+        C)
+        EXISTS can do both A and B
 
-        D)
-        UTILIZE library;'
+        D) EXISTS adds the requested data to
+        the table '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: What does EXISTS do?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -10305,20 +10320,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) LEFT JOIN
 
-        B) CUT DATABASE library;
+        B) RIGHT JOIN
 
-        C)
-        DROP DATABASE library;
+        C) INNER JOIN
 
-        D) REMOVE DATABASE library;
+        D)
+        FULL (OUTER) JOIN
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: When trying to find data that exists in BOTH tables, what join would
+        you use?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -13024,8 +13040,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To delete a database you must use the must type on the SQL server  DROP
-        DATABASE database_name;
+      value: "An INNER JOIN returns only matches that exist in both tables.\n A LEFT
+        JOIN returns all rows from the left table and the matching rows from the
+        right; when there\u2019s no match, right-side columns are NULL.\r\nA RIGHT
+        JOIN is the mirror image: all rows from the right table plus matches from
+        the left, NULL when absent.\r\nA FULL (OUTER) JOIN returns all rows from
+        either table, filling in NULL where a counterpart is missing. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14868,6 +14888,26 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) FULL (OUTER) JOIN
+
+        B) INNER JOIN
+
+        C) RIGHT JOIN
+
+        D)
+        LEFT JOIN'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: 'Which join do you use to preserve the data from the Dogs table (left
+        table) and join the matching data from the Cats table (right table)? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -23882,6 +23922,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizNote
       objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: "An INNER JOIN returns only matches that exist in both tables.\nA LEFT
+        JOIN returns all rows from the left table and the matching rows from the
+        right; when there\u2019s no match, right-side columns are NULL.\r\nA RIGHT
+        JOIN is the mirror image: all rows from the right table plus matches from
+        the left, NULL when absent.\r\nA FULL (OUTER) JOIN returns all rows from
+        either table, filling in NULL where a counterpart is missing. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28011,7 +28060,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To select the database that you created you must type in USE database_name;
+      value: NOT EXISTS checks  a correlated subquery returns none; EXISTS checks
+        whether a correlated subquery returns at least one row.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
