@@ -731,7 +731,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: 'Introduction to Normal Forms:
+
+        Normal Forms are a set of rules that reduce redundant data, save space, prevent
+        anomalies in relational schemas. This makes it easier to manage schemas.
+
+
+        First Normal Form (1NF) is focused on elimating duplicate records. Each row
+        and column must be unique and contain no duplicates. Every column must contain
+        atomic values. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6048,15 +6056,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) Prevent anomalies
+
+        B) Prevent wasted storage
+
+        C) Reduce data duplicates
+
+        D) Provide system security '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: Which of these is NOT a reason to use Normal Form?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -6914,22 +6928,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A) Eliminate Duplicate Records
 
-        B) USE library:
+        B) Eliminate Values
 
-        C) APPLY library;
+        C) Eliminating Dependencies
 
-        D)
-        UTILIZE library;'
+        D) Eliminating Normalcy'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: What is the purpose of 1NF?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: completed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -9856,24 +9873,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) Delete the entry entirely.
 
-        B) CUT DATABASE library;
+        B) Move the entry to another schema.
 
-        C)
-        DROP DATABASE library;
+        C) Switch the order of the subjects.
 
-        D) REMOVE DATABASE library;
+        D) Separate the entries so only one subject is under the column.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: 'How would you normalize the entry into 1NF? '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -12616,8 +12632,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1777667492}
+  m_Children: [{fileID: 1777667492}]
   m_Father: {fileID: 2015711232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824114463 stripped
@@ -14507,6 +14522,21 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) Yes.
+
+        B) No.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: 'Suppose you have a table with a column titled "subjects". One of the
+        entries has "English, Math" written under that column. Does this violate 1NF?  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -26458,8 +26488,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 401585703}
+  m_Children: [{fileID: 401585703}]
   m_Father: {fileID: 764196814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781515540 stripped
@@ -33009,43 +33038,43 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[0]'
+      propertyPath: fireballs.Array.data[0]
       value: 
       objectReference: {fileID: 1892506245}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[1]'
+      propertyPath: fireballs.Array.data[1]
       value: 
       objectReference: {fileID: 1781515540}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[2]'
+      propertyPath: fireballs.Array.data[2]
       value: 
       objectReference: {fileID: 748630941}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[3]'
+      propertyPath: fireballs.Array.data[3]
       value: 
       objectReference: {fileID: 818705110}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[4]'
+      propertyPath: fireballs.Array.data[4]
       value: 
       objectReference: {fileID: 1452214339}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[5]'
+      propertyPath: fireballs.Array.data[5]
       value: 
       objectReference: {fileID: 824114463}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[6]'
+      propertyPath: fireballs.Array.data[6]
       value: 
       objectReference: {fileID: 1921898586}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[7]'
+      propertyPath: fireballs.Array.data[7]
       value: 
       objectReference: {fileID: 147709201}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[8]'
+      propertyPath: fireballs.Array.data[8]
       value: 
       objectReference: {fileID: 693749226}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: 'fireballs.Array.data[9]'
+      propertyPath: fireballs.Array.data[9]
       value: 
       objectReference: {fileID: 457900911}
     m_RemovedComponents: []

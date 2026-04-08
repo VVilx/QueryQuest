@@ -712,7 +712,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: '3NF is focused on eliminating transitive dependency.
+
+        Transitive
+        dependency is where non-key attribute field depends on another non-key attribute.
+
+        For
+        example, if CarID depends on CarModel and then CarModel depends on DriverID,
+        this results in a transitive dependency because CarID indirectly depends
+        on DriverID. It also needs to be in 2NF and 1NF. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1351,6 +1359,11 @@ PrefabInstance:
     - target: {fileID: 3555385157916608110, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: m_Name
       value: QuizNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'In the next level, we will cover the Fifth Normal Form (5NF) and the
+        complications of over-normalization. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6065,15 +6078,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) Move one of the attributes to another table linked to the other
+        attribute.
+
+        B) Remove the non-key attributes from the table to stop
+        the dependency.
+
+        C) Stop all dependencies completely. '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: What should be done to solve a 3NF violation?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -6894,18 +6913,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A) Yes.
 
-        B) USE library:
+        B) No.
 
-        C) APPLY library;
-
-        D)
-        UTILIZE library;'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: If my table violates 2NF, can my table be in 3NF?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -9720,24 +9736,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) No, because there isn''t a multi-valued dependency.
 
-        B) CUT DATABASE library;
+        B)
+        Yes, because there isn''t a multi-valued dependency.
 
-        C)
-        DROP DATABASE library;
+        C) No, because
+        there isn''t a transitive dependency.
 
-        D) REMOVE DATABASE library;
+        D) Yes, because there isn''t
+        a transitive dependency.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: 'Suppose I have a table that contains (StudentID, StudentName, and StudentPhone),
+        and there is one entry per student. Does this violate 4NF? '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -14225,6 +14244,23 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) BCNF ensures that every field must hold atomic values.
+
+        B)
+        BCNF ensures that there is no transitive dependencies.
+
+        C) BCNF ensures
+        that the determinant must be a candidate key.
+
+        D) BCNF ensures there
+        are no partial dependencies. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: What does BCNF do?
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -27138,6 +27174,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizNote
       objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: "There exists a stronger form of 3NF called the Boyce-Codd Normal Form.
+        \nBCNF, also considered 3.5NF, has it that for every non-trivial funcional
+        dependecy, the determinant must be a candidate key.\n(X->Y), X must be a
+        candidate key.\nYou also need to not violate 3NF, 2NF, 1NF to be in BCNF
+        form. "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28043,6 +28087,20 @@ PrefabInstance:
     - target: {fileID: 3555385157916608110, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: m_Name
       value: QuizNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: '4NF has a focus on removing multi-valued dependencies.
+
+        A multi-valued
+        dependency occurs when one attribute determines another, but they''re all
+        independent from the rest of the other atrributes. To be in 4NF, the table
+        must also be in BCNF, 3NF, 2NF, and 1NF.
+
+        An example of a multi-valued
+        dependency is when a table that contains StudentID, Classes,Clubs has it
+        where the same student participates in more than one class and club. The
+        fix here is separate them into a table for classes and clubs.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -806,7 +806,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: 'a One-to-Many relationship is where one table can be associated with
+        mutliple records in another table but the other table is only associated
+        with one record of the first table.
+
+        Example:
+
+        Table A has
+        multiple records associated with Table B. Table B only has one record associated
+        with Table A.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1696,6 +1704,12 @@ PrefabInstance:
     - target: {fileID: 3555385157916608110, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: m_Name
       value: QuizNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'An extra form of relationship in SQL to know abouut is the self-referencing
+        relationship. A table has a foreign key that references it''s own primary
+        key. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5904,15 +5918,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) No, because Table A and Table B are only associated with a record
+        from each other.
+
+        B) Yes, because Table A and Table B are associated
+        with multiple records from each other.
+
+        C) No, because Table A and
+        Table B are associated with multiple records from each other.
+
+        D)
+        Yes, because Table A and Table B are only associated with a record from each
+        other.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: Table A has multiple records associated with Table B. Table B has multiple
+        records associated with Table A. Is this considered a One-To-Many relationship?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -7079,22 +7105,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A) At least one table is associated with only one record of the other.
 
-        B) USE library:
+        B)
+        At least one table is associated with multiple records of each other.
 
-        C) APPLY library;
+        C)
+        All tables are associated with one record of the other.
 
-        D)
-        UTILIZE library;'
+        D) All tables
+        are associated with multiple records of each other.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: What is the similiarty between One-to-One and One-To-Many relationships?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -9616,24 +9644,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) None. They are exactly the sa me.
 
-        B) CUT DATABASE library;
+        B) One-to-Many links
+        one child record to multiple parent records while Many-To-One links multiple
+        child records to one parent record.
 
-        C)
-        DROP DATABASE library;
+        C) None, it is just a difference
+        between the order in which the tables are stated.
 
-        D) REMOVE DATABASE library;
+        D) One-to-Many
+        links one parent record to multiple child records while Many-To-One lines
+        one child record to multiple parent records.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: What is the difference between a Many-to-One Relationship and a One-to-Many
+        Relationship?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -14296,6 +14329,27 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) No, they only use one foreign key.
+
+        B) Yes, they do and
+        they are connected by the current tables.
+
+        C) Yes, through an extra
+        table to hold the foreign keys.
+
+        D) No, they use only one primary
+        key. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: 'Do Many-To-Many relationships use multiple foreign keys? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -27848,6 +27902,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizNote
       objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'Many-to-Many relationship is when all tables can be associated with
+        multiple records of each other.
+
+        Example:
+
+        Table A is associated
+        with multiple records from Table B. Table B is associated with many recrods
+        from Table A. This can be done using a third table that holds the paired
+        foreign keys only.'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28754,6 +28820,16 @@ PrefabInstance:
     - target: {fileID: 3555385157916608110, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: m_Name
       value: QuizNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'A Many-to-One Relationship is when mutliple records from one table
+        are associated with one record in another table.
+
+        Example:
+
+        Table
+        B has multiple records associated to one record in Table A.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

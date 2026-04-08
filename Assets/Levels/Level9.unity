@@ -736,7 +736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: "5NF is the most restrictive normal form. It requires that the table
+        be in 4NF, BCNF, 3NF, 2NF, and 1NF. It ensures that the main table is composed
+        of smaller connected tables without the loss of information. \nExample: A
+        table consists of 3 columns. If there is a dependency among the three, it
+        will be split into smaller tables to prevent redundancy.\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1481,6 +1485,11 @@ PrefabInstance:
     - target: {fileID: 3555385157916608110, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: m_Name
       value: QuizNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: In the next level, we will cover the other three remaining types of
+        relationships in SQL.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6299,11 +6308,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) It does not need to be in 4NF.
+
+        B) It ensures the elimination
+        of join dependencies.
+
+        C) It ensures the elimination of multi-values
+        dependencies.
+
+        D) It ensures the elimination of transitive dependencies. '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: Which of the following is true about 5NF?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -7173,22 +7190,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A) 1NF is the most strict normal form.
 
-        B) USE library:
+        B) 4NF ensures removing
+        transitive dependencies.
 
-        C) APPLY library;
+        C) 5NF does not require the other normal
+        forms.
 
-        D)
-        UTILIZE library;'
+        D) BCNF is more strict than 3NF.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: Which of the following is TRUE?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -9628,24 +9646,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) Yes.
 
-        B) CUT DATABASE library;
-
-        C)
-        DROP DATABASE library;
-
-        D) REMOVE DATABASE library;
+        B) No.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: Suppose I have Tables A and C. Table A has exactly one record associated
+        with Table C. Table C also has exactly one record associated with Table A.
+        Does this count as a One-to-One relationship?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -14334,6 +14349,29 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) One-to-One
+
+        B) Few-to-Few
+
+        C) Many-to-Many
+
+        D)
+        Many-to-One'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: Which is NOT a type of relationship in SQL?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: completed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -28150,6 +28188,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuizNote
       objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'There are many types of relationships in SQL. To list them, they are:
+
+        One-to-One
+
+        One-to-Many
+
+        Many-to-Many
+
+        Many-to-One '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28951,6 +29001,18 @@ PrefabInstance:
     - target: {fileID: 3555385157916608110, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: m_Name
       value: QuizNote
+      objectReference: {fileID: 0}
+    - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
+      propertyPath: noteMessage
+      value: 'A One-to-One Relationship is where one record in a Table is associated
+        with only one record of another Table and vice versa.
+
+        An example
+        would be that Table A has exactly one record associated with a record in
+        Table B. Table B has exactly one record associated with a record in Table
+        B.
+
+        Table A''s primary key is the foreign key in Table B. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

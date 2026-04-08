@@ -674,7 +674,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: "Second Normal Form (2NF) is focused on eliminating partial dependencies.\nTo
+        be in 2NF, the table must be in 1NF first. It also needs dependencies to
+        be fully functional. \nIf only part of a composite key changes the result,
+        it would be a partial dependency.\n\nA composite key is a key that consists
+        of more than one column that their values combined identify unique values.
+        Example: (name, mobile number) "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6135,15 +6140,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) Yes.
+
+        B) No.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: 'Let''s just say there exists composite key (ContactID, ContactPhone)
+        that column ContactPossible is to depend on. If I change ConactPhone, it
+        changes the value that belongs in the cell. Is this violating 2NF? '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -7316,22 +7325,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) SELECT library;
+      value: 'A) It violates 1NF.
 
-        B) USE library:
+        B) It is using a composite key.
 
-        C) APPLY library;
+        C)
+        It uses a composite key partially.
 
-        D)
-        UTILIZE library;'
+        D) It is using a primary key. '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How do you select the database named library?
+      value: Why is it violating 2NF?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -10293,24 +10302,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) DELETE DATABASE library;
+      value: 'A) 2NF addresses the order data is put in.
 
-        B) CUT DATABASE library;
+        B) 2NF is stricter
+        than 1NF.
 
-        C)
-        DROP DATABASE library;
+        C) 1NF is stricter than 2NF.
 
-        D) REMOVE DATABASE library;
+        D) 1NF is focused
+        on removing partial dependencies.
 
 '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: How would you delete the database library from the server
+      value: Which of the following is TRUE?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: completed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -14389,6 +14403,26 @@ PrefabInstance:
     - target: {fileID: 1319107997865907170, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: answers
+      value: 'A) Delete the entry entirely.
+
+        B) Delete the composite key.
+
+        C)
+        Fix the composite key so the column depends on both at the same time.
+
+        D)
+        Convert the composite key into a simple primary key.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: question
+      value: How would you fix it into 2NF?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
