@@ -806,7 +806,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: There is an extra form of relationship in SQL called a Self-Referencing
+        Relationship. Here, the foreign key references the primary key from the same
+        table.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1699,7 +1701,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: ' '
+      value: "The Projection Operation is similar to the Selection Operation but
+        instead it display columns based on a condition given. It will remove duplicate
+        values by default.\n\nNotation: \u03C0(col)(Relation)\n\nExample: \u03C0(a,d)(B)
+        -> Projects columns a and d from Relation B. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5908,15 +5913,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) Not having a foreign key.
+
+        B) Foreign key references primary
+        key with another table.
+
+        C) Not having a primary key.
+
+        D)
+        Foreign Key references Primary key from the same table.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: What makes a relationship Self-Referencing?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -7083,15 +7096,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) Relational Algebra is based on SQL Queries.
+
+        B) Relations
+        are rows in a tuple.
+
+        C) SQL Queries are based on Relational Algebra.
+
+        D)
+        Tuples are columns that represents an entry.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: Which of the following is TRUE about Relational Algebra?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 65
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -9613,11 +9634,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 
+      value: 'A) You only select the first name column.
+
+        B) You project both
+        columns.
+
+        C) You only project the last name column.
+
+        D) You
+        select both columns. '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 
+      value: "If I use \u03C0(first name, last name)(Student), what would I retrieve?"
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -14287,15 +14316,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: ' '
+      value: 'A) Selecting tuples where c is less than 3 in tuple B.
+
+        B)
+        Selecting tuples where b is less than 3 in tuple C.
+
+        C) Selecting
+        tuples where b is more than 3 in tuple C.
+
+        D) Selecting tuples where
+        c is more than 3 in tuple B. '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: ' '
+      value: "If I use \u03C3(c>3)(B), what am I selecting?"
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 67
+      value: 68
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -27850,7 +27888,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 
+      value: 'Relational Algebra is the mathematical basis that SQL Queries are based
+        on.
+
+        It ensures that data retrieval and manipulation are efficient.
+
+        We
+        will only go over two of the most basic operations.
+
+
+        Words to know
+        related to Relational Algebra:
+
+        Relations are tables.
+
+        Tuples
+        are a single row that represents an entry. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28761,13 +28814,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 'A Many-to-One Relationship is when mutliple records from one table
-        are associated with one record in another table.
-
-        Example:
-
-        Table
-        B has multiple records associated to one record in Table A.'
+      value: "The Selection Operation is used to select rows(tuples) that only match
+        the condition given.\nSELECTING DOESN'T MEAN DISPLAYING.\n\nNotation: \u03C3(condition)(Relation)
+        \n\nExample: \u03C3(b<6)(A) -> selects all the tuples that have b greater
+        than 6 in Relation A. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

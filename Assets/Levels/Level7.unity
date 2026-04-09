@@ -14406,15 +14406,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) Delete the entry entirely.
+      value: 'A) Remove ContactPhone from the key so it only relies on it.
 
-        B) Delete the composite key.
+        B)
+        Delete ContactPossible and exclude it.
 
-        C)
-        Fix the composite key so the column depends on both at the same time.
+        C) Move ContactPossible to
+        another table, so it depends only on ContactPhone.
 
-        D)
-        Convert the composite key into a simple primary key.'
+        D) Remove ContactID
+        from the composite key.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
