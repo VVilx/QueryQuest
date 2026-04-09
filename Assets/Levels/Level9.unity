@@ -736,11 +736,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: "5NF is the most restrictive normal form. It requires that the table
-        be in 4NF, BCNF, 3NF, 2NF, and 1NF. It ensures that the main table is composed
-        of smaller connected tables without the loss of information. \nExample: A
-        table consists of 3 columns. If there is a dependency among the three, it
-        will be split into smaller tables to prevent redundancy.\n"
+      value: "There are many types of relationships in SQL. To list them, they are:\nOne-to-One\nOne-to-Many\nMany-to-Many\nMany-to-One\n\nA
+        One-to-One relationship is when exactly one record from a table connects
+        to exactly one record from another table and vice versa.\n\nExample: Table
+        A has exactly one record associated with Table B. Table B has exactly one
+        record associated with Table A.\n\n\n "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1488,8 +1488,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: In the next level, we will cover the other three remaining types of
-        relationships in SQL.
+      value: 'A Many-to-One Relationship is when mutliple records from one table
+        are associated with one record in another table.
+
+        Example:
+
+        Table
+        B has multiple records associated to one record in Table A.'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6308,19 +6313,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) It does not need to be in 4NF.
+      value: 'A) Yes.
 
-        B) It ensures the elimination
-        of join dependencies.
-
-        C) It ensures the elimination of multi-values
-        dependencies.
-
-        D) It ensures the elimination of transitive dependencies. '
+        B) No.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: Which of the following is true about 5NF?
+      value: 'Suppose I have Table A and Table B. Table A has exactly one record
+        associated with Table B. Table B has multiple records associated with Table
+        A. Does this count as a one-to-one relationship? '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -7190,23 +7191,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) 1NF is the most strict normal form.
+      value: 'A) Yes.
 
-        B) 4NF ensures removing
-        transitive dependencies.
-
-        C) 5NF does not require the other normal
-        forms.
-
-        D) BCNF is more strict than 3NF.'
+        B) No.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: Which of the following is TRUE?
+      value: Table A has multiple records associated with Table B. Table B has multiple
+        records associated with Table A. Is this considered a One-To-Many relationship?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 68
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -9646,21 +9642,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) Yes.
+      value: 'A) True
 
-        B) No.
-
-'
+        B) False'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: Suppose I have Tables A and C. Table A has exactly one record associated
-        with Table C. Table C also has exactly one record associated with Table A.
-        Does this count as a One-to-One relationship?
+      value: Many-to-One and One-to-Many are exactly the same. Is this statement
+        true or false?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 65
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -14352,18 +14345,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) One-to-One
+      value: 'A) No, they only use one foreign key.
 
-        B) Few-to-Few
+        B) Yes, they do and
+        they are connected by the current tables.
 
-        C) Many-to-Many
+        C) Yes, through an extra
+        table to hold the foreign keys.
 
-        D)
-        Many-to-One'
+        D) No, they use only one primary
+        key.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: Which is NOT a type of relationship in SQL?
+      value: Do Many-To-Many relationships use multiple foreign keys?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: completed
@@ -14371,7 +14366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 66
+      value: 67
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -28190,15 +28185,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 'There are many types of relationships in SQL. To list them, they are:
+      value: 'A One-to-Many relationship is where one table can be associated with
+        mutliple records in another table but the other table is only associated
+        with one record of the first table.
 
-        One-to-One
+        Example:
 
-        One-to-Many
-
-        Many-to-Many
-
-        Many-to-One '
+        Table A has
+        multiple records associated with Table B. Table B only has one record associated
+        with Table A.  '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -29004,15 +28999,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 'A One-to-One Relationship is where one record in a Table is associated
-        with only one record of another Table and vice versa.
-
-        An example
-        would be that Table A has exactly one record associated with a record in
-        Table B. Table B has exactly one record associated with a record in Table
-        B.
-
-        Table A''s primary key is the foreign key in Table B. '
+      value: "Many-to-Many relationship is when all tables can be associated with
+        multiple records of each other.\r\nExample:\r\nTable A is associated with
+        multiple records from Table B. Table B is associated with many records from
+        Table A. This can be done using a third table that holds the paired foreign
+        keys only. \r\n"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

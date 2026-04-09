@@ -1362,8 +1362,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: 'In the next level, we will cover the Fifth Normal Form (5NF) and the
-        complications of over-normalization. '
+      value: "5NF is the most restrictive normal form. It requires that the table
+        be in 4NF, BCNF, 3NF, 2NF, and 1NF. It ensures that the main table is composed
+        of smaller connected tables without the loss of information. \r\nExample:
+        A table consists of 3 columns. If there is a dependency among the three,
+        it will be split into smaller tables to prevent redundancy."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6677,8 +6680,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1262421441}
+  m_Children: []
   m_Father: {fileID: 2078255362}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &444089093
@@ -6921,7 +6923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: If my table violates 2NF, can my table be in 3NF?
+      value: If my table violates 3NF, can my table be in BCNF?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -9736,27 +9738,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) No, because there isn''t a multi-valued dependency.
+      value: 'A) It does not need to be in 4NF.
 
-        B)
-        Yes, because there isn''t a multi-valued dependency.
+        B) It ensures the elimination
+        of join dependencies.
 
-        C) No, because
-        there isn''t a transitive dependency.
+        C) It ensures the elimination of multi-values
+        dependencies.
 
-        D) Yes, because there isn''t
-        a transitive dependency.
-
-'
+        D) It ensures the elimination of transitive dependencies.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: 'Suppose I have a table that contains (StudentID, StudentName, and StudentPhone),
-        and there is one entry per student. Does this violate 4NF? '
+      value: Which of the following is true about 5NF?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
-      value: 65
+      value: 66
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -14247,20 +14245,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: answers
-      value: 'A) BCNF ensures that every field must hold atomic values.
+      value: 'A) No, because there isn''t a multi-valued dependency.
 
         B)
-        BCNF ensures that there is no transitive dependencies.
+        Yes, because there isn''t a multi-valued dependency.
 
-        C) BCNF ensures
-        that the determinant must be a candidate key.
+        C) No, because
+        there isn''t a transitive dependency.
 
-        D) BCNF ensures there
-        are no partial dependencies. '
+        D) Yes, because there isn''t
+        a transitive dependency.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: What does BCNF do?
+      value: Suppose I have a table that contains (StudentID, StudentName, and StudentPhone),
+        and there is one entry per student. Does this violate 4NF?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
+      propertyPath: correctAnswer
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4379818704030914970, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: m_Name
@@ -19405,11 +19408,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!4 &1262421441 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-  m_PrefabInstance: {fileID: 1610594870}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1265897110
 GameObject:
   m_ObjectHideFlags: 0
@@ -23824,87 +23822,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607789872}
   m_CullTransparentMesh: 1
---- !u!1001 &1610594870
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 443593721}
-    m_Modifications:
-    - target: {fileID: 2857494193482959144, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4475677294716743133, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 5230917624313131438, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6387653169411473371, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_Name
-      value: EnemyPatrol
-      objectReference: {fileID: 0}
-    - target: {fileID: 7028721981022812011, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7028721981022812011, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: enemy
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8625230832182229836, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8648906947914861403, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 65e47227096037f4fbeeb7a149455519, type: 3}
 --- !u!1 &1614735022
 GameObject:
   m_ObjectHideFlags: 0
