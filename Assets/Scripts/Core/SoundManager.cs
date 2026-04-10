@@ -6,24 +6,27 @@ public class SoundManager : MonoBehaviour
     private AudioSource soundSource;
     private AudioSource musicSource;
 
-    private void Awake() {
-        
-        soundSource = GetComponent<AudioSource>();
-        musicSource = transform.GetChild(0).GetComponent<AudioSource>();
+   private void Awake() 
+    {
+    soundSource = GetComponent<AudioSource>();
+    musicSource = transform.GetChild(0).GetComponent<AudioSource>();
 
-        //Keep this object even when we go to new scene
-        if (instance == null) {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        //Destroy duplicate
-        else if(instance != null && instance != this) {
-            Destroy(gameObject);
-        }
+    // Make this object root before calling DontDestroyOnLoad
+    transform.SetParent(null);
+    
+    // Keep this object even when we go to new scene
+    if (instance == null) {
+        instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+    // Destroy duplicate
+    else if(instance != null && instance != this) {
+        Destroy(gameObject);
+    }
 
-        //Assign initial volumes
-        ChangeMusicVolume(0);
-        ChangeSoundVolume(0);
+    // Assign initial volumes
+    ChangeMusicVolume(0);
+    ChangeSoundVolume(0);
     }
     public void PlaySound(AudioClip _sound) {
         soundSource.PlayOneShot(_sound);
