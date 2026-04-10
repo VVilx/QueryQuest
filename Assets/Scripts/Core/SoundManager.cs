@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource musicSource;
 
    private void Awake() 
-    {
+   {
     soundSource = GetComponent<AudioSource>();
     musicSource = transform.GetChild(0).GetComponent<AudioSource>();
 
@@ -28,6 +28,7 @@ public class SoundManager : MonoBehaviour
     ChangeMusicVolume(0);
     ChangeSoundVolume(0);
     }
+
     public void PlaySound(AudioClip _sound) {
         soundSource.PlayOneShot(_sound);
     }
