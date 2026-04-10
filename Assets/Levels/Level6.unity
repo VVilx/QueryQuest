@@ -733,13 +733,14 @@ PrefabInstance:
       propertyPath: noteMessage
       value: 'Introduction to Normal Forms:
 
-        Normal Forms are a set of rules that reduce redundant data, save space, prevent
-        anomalies in relational schemas. This makes it easier to manage schemas.
+        Normal Forms are a set of rules
+        that reduce redundant data, save space, prevent anomalies in relational schemas.
+        This makes it easier to manage schemas.
 
 
-        First Normal Form (1NF) is focused on elimating duplicate records. Each row
-        and column must be unique and contain no duplicates. Every column must contain
-        atomic values. '
+        First Normal Form (1NF)
+        is focused on elimating duplicate records. Each row and column must be unique
+        and contain no duplicates. Every column must contain atomic values. '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6060,7 +6061,8 @@ PrefabInstance:
 
         B) Prevent wasted storage
 
-        C) Reduce data duplicates
+        C)
+        Reduce data duplicates
 
         D) Provide system security '
       objectReference: {fileID: 0}
@@ -6932,7 +6934,8 @@ PrefabInstance:
 
         B) Eliminate Values
 
-        C) Eliminating Dependencies
+        C)
+        Eliminating Dependencies
 
         D) Eliminating Normalcy'
       objectReference: {fileID: 0}
@@ -8892,9 +8895,8 @@ GameObject:
   - component: {fileID: 607741910}
   - component: {fileID: 607741909}
   - component: {fileID: 607741908}
-  - component: {fileID: 607741907}
   m_Layer: 5
-  m_Name: Music (Shadow)
+  m_Name: Tutorial (Shadow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8919,20 +8921,6 @@ RectTransform:
   m_AnchoredPosition: {x: 11, y: -193}
   m_SizeDelta: {x: 544.8988, y: 108.94}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &607741907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607741905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70345d90b73069948923d40ef4388c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeName: musicVolume
-  textIntro: 'MUSIC: '
 --- !u!114 &607741908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9875,11 +9863,13 @@ PrefabInstance:
       propertyPath: answers
       value: 'A) Delete the entry entirely.
 
-        B) Move the entry to another schema.
+        B) Move the entry to another
+        schema.
 
         C) Switch the order of the subjects.
 
-        D) Separate the entries so only one subject is under the column.
+        D) Separate
+        the entries so only one subject is under the column.
 
 '
       objectReference: {fileID: 0}
@@ -12632,7 +12622,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 1777667492}]
+  m_Children:
+  - {fileID: 1777667492}
   m_Father: {fileID: 2015711232}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &824114463 stripped
@@ -12755,9 +12746,8 @@ GameObject:
   - component: {fileID: 844900736}
   - component: {fileID: 844900735}
   - component: {fileID: 844900734}
-  - component: {fileID: 844900733}
   m_Layer: 5
-  m_Name: Music
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12782,20 +12772,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -193}
   m_SizeDelta: {x: 544.8988, y: 108.94}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &844900733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844900731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70345d90b73069948923d40ef4388c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeName: musicVolume
-  textIntro: 'MUSIC: '
 --- !u!114 &844900734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12842,7 +12818,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 818503281}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: MusicVolume
+        m_MethodName: OpenTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12902,7 +12878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MUSIC
+  m_text: TUTORIAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad05aa889eb33884ebd87f0e48440fcb, type: 2}
   m_sharedMaterial: {fileID: 6266433925308575970, guid: ad05aa889eb33884ebd87f0e48440fcb, type: 2}
@@ -14532,7 +14508,8 @@ PrefabInstance:
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
       value: 'Suppose you have a table with a column titled "subjects". One of the
-        entries has "English, Math" written under that column. Does this violate 1NF?  '
+        entries has "English, Math" written under that column. Does this violate
+        1NF?  '
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: correctAnswer
@@ -18929,7 +18906,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2b96f0c4c38470848bd0d45b90ba08fe, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
@@ -26488,7 +26465,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: [{fileID: 401585703}]
+  m_Children:
+  - {fileID: 401585703}
   m_Father: {fileID: 764196814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781515540 stripped
@@ -33038,43 +33016,43 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[0]
+      propertyPath: 'fireballs.Array.data[0]'
       value: 
       objectReference: {fileID: 1892506245}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[1]
+      propertyPath: 'fireballs.Array.data[1]'
       value: 
       objectReference: {fileID: 1781515540}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[2]
+      propertyPath: 'fireballs.Array.data[2]'
       value: 
       objectReference: {fileID: 748630941}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[3]
+      propertyPath: 'fireballs.Array.data[3]'
       value: 
       objectReference: {fileID: 818705110}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[4]
+      propertyPath: 'fireballs.Array.data[4]'
       value: 
       objectReference: {fileID: 1452214339}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[5]
+      propertyPath: 'fireballs.Array.data[5]'
       value: 
       objectReference: {fileID: 824114463}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[6]
+      propertyPath: 'fireballs.Array.data[6]'
       value: 
       objectReference: {fileID: 1921898586}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[7]
+      propertyPath: 'fireballs.Array.data[7]'
       value: 
       objectReference: {fileID: 147709201}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[8]
+      propertyPath: 'fireballs.Array.data[8]'
       value: 
       objectReference: {fileID: 693749226}
     - target: {fileID: 7003231714240028555, guid: ae96bb5d672c7d94fa4322b9c34ba4b5, type: 3}
-      propertyPath: fireballs.Array.data[9]
+      propertyPath: 'fireballs.Array.data[9]'
       value: 
       objectReference: {fileID: 457900911}
     m_RemovedComponents: []

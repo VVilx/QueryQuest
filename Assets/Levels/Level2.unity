@@ -18482,9 +18482,8 @@ GameObject:
   - component: {fileID: 1186792095}
   - component: {fileID: 1186792094}
   - component: {fileID: 1186792093}
-  - component: {fileID: 1186792092}
   m_Layer: 5
-  m_Name: Music
+  m_Name: Tutorial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18509,20 +18508,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -193}
   m_SizeDelta: {x: 544.8988, y: 108.94}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1186792092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1186792090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70345d90b73069948923d40ef4388c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeName: musicVolume
-  textIntro: 'MUSIC: '
 --- !u!114 &1186792093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18569,7 +18554,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 818503281}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: MusicVolume
+        m_MethodName: OpenTutorial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18629,7 +18614,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MUSIC
+  m_text: TUTORIAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad05aa889eb33884ebd87f0e48440fcb, type: 2}
   m_sharedMaterial: {fileID: 6266433925308575970, guid: ad05aa889eb33884ebd87f0e48440fcb, type: 2}
@@ -19207,7 +19192,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 2b96f0c4c38470848bd0d45b90ba08fe, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.15
   m_Pitch: 1
@@ -33053,9 +33038,8 @@ GameObject:
   - component: {fileID: 2113167028}
   - component: {fileID: 2113167027}
   - component: {fileID: 2113167026}
-  - component: {fileID: 2113167025}
   m_Layer: 5
-  m_Name: Music (Shadow)
+  m_Name: Tutorial (Shadow)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33080,20 +33064,6 @@ RectTransform:
   m_AnchoredPosition: {x: 11, y: -193}
   m_SizeDelta: {x: 544.8988, y: 108.94}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2113167025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113167023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70345d90b73069948923d40ef4388c91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeName: musicVolume
-  textIntro: 'MUSIC: '
 --- !u!114 &2113167026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33144,7 +33114,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MUSIC
+  m_text: TUTORIAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad05aa889eb33884ebd87f0e48440fcb, type: 2}
   m_sharedMaterial: {fileID: 6266433925308575970, guid: ad05aa889eb33884ebd87f0e48440fcb, type: 2}

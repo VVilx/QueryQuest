@@ -311,4 +311,15 @@ public class UIManager : MonoBehaviour
     }
 
     #endregion
+
+    #region Tutorial UI
+    public void OpenTutorial()
+    {
+        PlayerPrefs.SetString("PreviousScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.Save();
+
+        SceneManager.LoadScene("Tutorial"); // Load the tutorial scene
+    }
+
+    #endregion
 }
