@@ -67,7 +67,7 @@ public class Spikehead : EnemyDamage
         attacking = false;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         SoundManager.instance.PlaySound(impactSound);
         base.OnTriggerEnter2D(collision);

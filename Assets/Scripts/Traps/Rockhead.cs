@@ -85,7 +85,7 @@ public class Rockhead : EnemyDamage
         directions[0] = -transform.up * range;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         SoundManager.instance.PlaySound(impactSound);
         base.OnTriggerEnter2D(collision);

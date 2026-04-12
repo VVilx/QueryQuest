@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using System.Numerics;
 
 public class UIManager : MonoBehaviour
 {
@@ -42,6 +43,9 @@ public class UIManager : MonoBehaviour
 
     private bool noteOpen = false;
 
+    private UnityEngine.Vector3 savedPlayerPosition;
+    private string savedSceneName;
+
     private void Awake()
     {
         instance = this;
@@ -61,7 +65,10 @@ public class UIManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            if(pauseScreen.activeInHierarchy)
+            if (quizOpen)
+            {
+                CloseQuiz();
+            } else if(pauseScreen.activeInHierarchy)
                 PauseGame(false);
             else
                 PauseGame(true);
@@ -144,8 +151,8 @@ public class UIManager : MonoBehaviour
         }
 
         // Disable player movement and attack
-        playerMovement = FindObjectOfType<PlayerMovement>();
-        playerAttack = FindObjectOfType<PlayerAttack>();
+        playerMovement = FindFirstObjectByType<PlayerMovement>();
+        playerAttack = FindFirstObjectByType<PlayerAttack>();
         if(playerMovement != null) playerMovement.enabled = false;
         if(playerAttack != null) playerAttack.enabled = false;
 
@@ -251,8 +258,8 @@ public class UIManager : MonoBehaviour
         noteOpen = true;
 
         // Disable player movement and attack
-        playerMovement = FindObjectOfType<PlayerMovement>();
-        playerAttack = FindObjectOfType<PlayerAttack>();
+        playerMovement = FindFirstObjectByType<PlayerMovement>();
+        playerAttack = FindFirstObjectByType<PlayerAttack>();
         if(playerMovement != null) playerMovement.enabled = false;
         if(playerAttack != null) playerAttack.enabled = false;
 
@@ -289,7 +296,7 @@ public class UIManager : MonoBehaviour
     {
         int currentLevel = SceneManager.GetActiveScene().buildIndex;
 
-        int unlocked = PlayerPrefs.GetInt("UnlockedLevel", 2);
+        int unlocked = PlayerPrefs.GetInt("UnlockedLevel", 3);
 
         if(currentLevel + 1 > unlocked)
             PlayerPrefs.SetInt("UnlockedLevel", currentLevel + 1);
@@ -315,10 +322,65 @@ public class UIManager : MonoBehaviour
     #region Tutorial UI
     public void OpenTutorial()
     {
-        PlayerPrefs.SetString("PreviousScene", SceneManager.GetActiveScene().name);
-        PlayerPrefs.Save();
+        string currentScene = SceneManager.GetActiveScene().name;
+        
+        // Save where we came from using a SPECIFIC key for tutorial
+        if (currentScene == "_MainMenu")
+        {
+            PlayerPrefs.SetString("TutorialReturnScene", "_MainMenu");
+        }
+        else
+        {
+            PlayerPrefs.SetString("TutorialReturnScene", currentScene);
 
-        SceneManager.LoadScene("Tutorial"); // Load the tutorial scene
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                savedPlayerPosition = player.transform.position;
+                savedSceneName = currentScene;
+
+                PlayerPrefs.SetFloat("SavedPlayerX", savedPlayerPosition.x);
+                PlayerPrefs.SetFloat("SavedPlayerY", savedPlayerPosition.y);
+                PlayerPrefs.SetString("SavedSceneName", savedSceneName);
+                PlayerPrefs.SetInt("HasSavedPosition", 1);
+
+            }
+        }
+        
+        PlayerPrefs.Save();
+        
+        Debug.Log($"Opening Tutorial from: {currentScene}, will return to: {PlayerPrefs.GetString("TutorialReturnScene")}");
+        
+        // Unpause if coming from pause menu
+        Time.timeScale = 1f;
+        
+        // Close pause screen if it's open
+        if (pauseScreen != null && pauseScreen.activeInHierarchy)
+        {
+            pauseScreen.SetActive(false);
+        }
+        
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void OpenTutorialFromPauseMenu()
+    {
+        // Unpause the game first
+        Time.timeScale = 1f;
+        
+        // Close pause menu if it's open
+        if (pauseScreen.activeInHierarchy)
+        {
+            pauseScreen.SetActive(false);
+        }
+        
+        // Save current scene and load tutorial
+        string currentScene = SceneManager.GetActiveScene().name;
+        PlayerPrefs.SetString("TutorialReturnScene", currentScene);
+        PlayerPrefs.Save();
+        
+        Debug.Log($"Opening Tutorial from Pause Menu - will return to: {currentScene}");
+        SceneManager.LoadScene("Tutorial");
     }
 
     #endregion

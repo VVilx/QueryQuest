@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyProjectile : EnemyDamage
@@ -38,7 +39,7 @@ public class EnemyProjectile : EnemyDamage
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         hit = true;
         base.OnTriggerEnter2D(collision); //Execute logic from parent script first

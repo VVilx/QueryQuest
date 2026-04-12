@@ -10,7 +10,7 @@ public class PlayerRespawn : MonoBehaviour
     private void Awake()
     {
         playerHealth = GetComponent<Health>(); //Get the player's health component
-        uiManager = FindObjectOfType<UIManager>(); //Find the UI manager in the scene
+        uiManager = FindFirstObjectByType<UIManager>(); //Find the UI manager in the scene
     }
 
     public void CheckRespawn()

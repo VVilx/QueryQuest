@@ -51,7 +51,7 @@ public class QuizUIManager : MonoBehaviour
         answerInput.ActivateInputField();
 
         // Disable player movement
-        playerMovement = FindObjectOfType<PlayerMovement>();
+        playerMovement = FindFirstObjectByType<PlayerMovement>();
         if(playerMovement != null)
             playerMovement.enabled = false;
 

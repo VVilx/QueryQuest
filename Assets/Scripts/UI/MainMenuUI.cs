@@ -13,15 +13,15 @@ public class MainMenuUI : MonoBehaviour
     public void NewGame()
     {
         // Reset unlocked levels
-        PlayerPrefs.SetInt(UNLOCK_KEY, 2); // Unlock the first level
+        PlayerPrefs.SetInt(UNLOCK_KEY, 3); // Unlock the first level
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene(2); // Load the first level
+        SceneManager.LoadScene(3); // Load the first level
     }
 
     public void ContinueGame()
     {
-        int level = PlayerPrefs.GetInt(UNLOCK_KEY, 2);
+        int level = PlayerPrefs.GetInt(UNLOCK_KEY, 3);
         SceneManager.LoadScene(level);
     }
 

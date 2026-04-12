@@ -13,9 +13,13 @@ public class TutorialUIManager : MonoBehaviour
     private void Start()
     {
         currentSceneName = SceneManager.GetActiveScene().name;
-
-        previousScene = PlayerPrefs.GetString("PreviousScene", "_MainMenu");
-        Debug.Log("Previous Scene: " + previousScene);
+        
+        // Get the saved return scene
+        previousScene = PlayerPrefs.GetString("TutorialReturnScene", "_MainMenu");
+        
+        Debug.Log($"Tutorial page: {currentSceneName}");
+        Debug.Log($"Will return to: {previousScene}");
+        Debug.Log($"TutorialReturnScene value in PlayerPrefs: {PlayerPrefs.GetString("TutorialReturnScene", "NOT SET")}");
     }
     
     void Update()
@@ -63,6 +67,16 @@ public class TutorialUIManager : MonoBehaviour
     public void ReturnToPreviousScene()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(previousScene);
+        
+        // Get the return scene from PlayerPrefs
+        string returnScene = PlayerPrefs.GetString("TutorialReturnScene", "_MainMenu");
+        
+        // Clear it so it doesn't affect next time
+        PlayerPrefs.DeleteKey("TutorialReturnScene");
+        PlayerPrefs.Save();
+        
+        Debug.Log($"Returning to: {returnScene}");
+        
+        SceneManager.LoadScene(returnScene);
     }
 }
