@@ -917,7 +917,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549303443}
   m_Layer: 5
-  m_Name: Tutorial
+  m_Name: Congratulations
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1529,7 +1529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  player: {fileID: 0}
+  player: {fileID: 549303443}
   aheadDistance: 5
   cameraSpeed: 2
 --- !u!114 &724347364

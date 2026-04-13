@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class CompleteLevelTrigger : MonoBehaviour
 {
     private bool playerInRange = false;
 

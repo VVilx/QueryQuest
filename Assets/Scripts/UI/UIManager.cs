@@ -291,6 +291,16 @@ public class UIManager : MonoBehaviour
         Time.timeScale = 0f;
     }
 
+    public void CloseLevelComplete()
+    {
+        levelCompletePanel.SetActive(false);
+
+        if(playerMovement != null) playerMovement.enabled = true;
+        if(playerAttack != null) playerAttack.enabled = true;
+
+        Time.timeScale = 1f;
+    }
+
     // Save game option
     public void SaveProgress()
     {
