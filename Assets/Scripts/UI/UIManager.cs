@@ -141,14 +141,23 @@ public class UIManager : MonoBehaviour
 
         // Assign answers to buttons
         string[] splitAnswers = answers.Split('\n');
-        for (int i = 0; i < answerButtons.Length; i++)
+
+        // Hide all buttons
+        for(int i = 0; i < answerButtons.Length; i++)
+        {
+            answerButtons[i].gameObject.SetActive(false);
+        }
+
+        for (int i = 0; i < splitAnswers.Length; i++)
         {
             TextMeshProUGUI btnText = answerButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-            if (i < splitAnswers.Length)
-                btnText.text = splitAnswers[i];
-            else
-                btnText.text = "";
+            btnText.text = splitAnswers[i];
+            answerButtons[i].gameObject.SetActive(true);
         }
+
+        // Reset selection
+        selectedIndex = 0;
+        UpdateButtonHighlight();
 
         // Disable player movement and attack
         playerMovement = FindFirstObjectByType<PlayerMovement>();
@@ -157,15 +166,20 @@ public class UIManager : MonoBehaviour
         if(playerAttack != null) playerAttack.enabled = false;
 
         Time.timeScale = 0f;
-
-        // Start selection at first button
-        selectedIndex = 0;
-        UpdateButtonHighlight();
     }
 
     private void UpdateQuizNavigation()
     {
         if(!quizOpen) return;
+
+        int activateButtonCount = 0;
+        for(int i = 0; i < answerButtons.Length; i++)
+        {
+            if(answerButtons[i].gameObject.activeInHierarchy)
+                activateButtonCount++;
+        }
+
+        if(activateButtonCount == 0) return;
 
         // Navigate Up
         if(Input.GetKeyDown(KeyCode.UpArrow))
@@ -192,10 +206,20 @@ public class UIManager : MonoBehaviour
 
     private void UpdateButtonHighlight()
     {
+        int visibleIndex = 0;
+
         for(int i = 0; i < answerButtons.Length; i++)
         {
             ColorBlock colors = answerButtons[i].colors;
-            colors.normalColor = (i == selectedIndex) ? Color.yellow : Color.white;
+
+            if(answerButtons[i].gameObject.activeSelf)
+            {
+                colors.normalColor = (visibleIndex == selectedIndex) ? Color.yellow : Color.white;
+                visibleIndex++;
+            } else
+            {
+                colors.normalColor = Color.white;
+            }
             answerButtons[i].colors = colors;
         }
     }
@@ -212,13 +236,35 @@ public class UIManager : MonoBehaviour
 
     private void SubmitAnswer()
     {
+        int visibleIndex = 0;
+        int actualButtonIndex = -1;
+
         if (selectedIndex < 0 || selectedIndex >= answerButtons.Length)
         {
             feedbackText.text = "Select an answer first!";
             return;
         }
 
-        char playerChoice = answerButtons[selectedIndex].GetComponentInChildren<TextMeshProUGUI>().text[0];
+        for(int i = 0; i < answerButtons.Length; i++)
+        {
+            if(answerButtons[i].gameObject.activeSelf)
+            {
+                if(visibleIndex == selectedIndex)
+                {
+                    actualButtonIndex = i;
+                    break;
+                }
+                visibleIndex++;
+            }
+        }
+        
+        if(actualButtonIndex == -1)
+        {
+            feedbackText.text = "Select an answer first!";
+            return;
+        }
+
+        char playerChoice = answerButtons[actualButtonIndex].GetComponentInChildren<TextMeshProUGUI>().text[0];
 
         if(playerChoice == correctLetter)
         {

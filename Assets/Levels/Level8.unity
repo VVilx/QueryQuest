@@ -7893,7 +7893,6 @@ MonoBehaviour:
   - {fileID: 1791700484}
   - {fileID: 1509885897}
   - {fileID: 1385838311}
-  - {fileID: 0}
   changeSound: {fileID: 8300000, guid: 12ae7066762946e40859ba1935e0c738, type: 3}
   interactSound: {fileID: 8300000, guid: cbc3f728cff1e95488d12f7c8325466d, type: 3}
 --- !u!114 &514844314
