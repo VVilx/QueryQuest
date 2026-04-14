@@ -81,7 +81,7 @@ public class SelectionArrow : MonoBehaviour
 
     private void Interact()
     {
-        if(activeOptions.Count == null || activeOptions.Count == 0 || currentPosition < 0 || currentPosition >= activeOptions.Count)
+        if(activeOptions == null || activeOptions.Count == 0 || currentPosition < 0 || currentPosition >= activeOptions.Count)
         { 
             return; //If there are no active options, do nothing
         }
