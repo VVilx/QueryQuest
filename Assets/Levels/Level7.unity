@@ -10294,9 +10294,7 @@ PrefabInstance:
         C) 1NF is stricter than 2NF.
 
         D) 1NF is focused
-        on removing partial dependencies.
-
-'
+        on removing partial dependencies.'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question

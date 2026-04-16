@@ -10236,9 +10236,7 @@ PrefabInstance:
         C) INNER JOIN
 
         D)
-        FULL (OUTER) JOIN
-
-'
+        FULL (OUTER) JOIN'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question

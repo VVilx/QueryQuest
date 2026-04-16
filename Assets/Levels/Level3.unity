@@ -9394,9 +9394,7 @@ PrefabInstance:
         SELECT employee, salary FROM table ORDER BY salary DESC LIMIT 5;
 
         D)
-        SELECT salary FROM table ORDER BY salary DESC LIMIT 5;
-
-'
+        SELECT salary FROM table ORDER BY salary DESC LIMIT 5;'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question

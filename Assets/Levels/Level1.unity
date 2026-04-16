@@ -712,8 +712,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8990398462943888737, guid: 37951d49c2f74cc449a86afe0b9b004a, type: 3}
       propertyPath: noteMessage
-      value: To create a database you must use the must type on the SQL server  CREATE
-        DATABASE database_name;
+      value: To create a database you must type on the SQL server  CREATE DATABASE
+        database_name;
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11008,9 +11008,7 @@ PrefabInstance:
         C)
         DROP DATABASE library;
 
-        D) REMOVE DATABASE library;
-
-'
+        D) REMOVE DATABASE library;'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
@@ -21103,13 +21101,11 @@ PrefabInstance:
         C)
         FABRICATE DATABASE library;
 
-        D) MANUFACTURE DATABASE library;
-
-'
+        D) MANUFACTURE DATABASE library;'
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
       propertyPath: question
-      value: Suppose I want to create a databse called library, how would I create
+      value: Suppose I want to create a database called library, how would I create
         the database?
       objectReference: {fileID: 0}
     - target: {fileID: 2381179419754332752, guid: f55c86c96a5031849a41bae376e1ce51, type: 3}
